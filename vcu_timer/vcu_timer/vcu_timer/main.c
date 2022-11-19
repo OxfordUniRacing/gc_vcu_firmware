@@ -7,7 +7,7 @@
 #define TIMEOUT_PB		500
 #define TIMEOUT_BMS		500
 
-//CAN Buffer values
+//CAN Buffer values @@@
 #define CAN_RX_BUFFER_SIZE 16
 //CAN Ids
 #define CAN_ID_PEDAL_BOARD	0x100
