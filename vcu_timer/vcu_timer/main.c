@@ -155,6 +155,8 @@ static void inv_parse_rx(char* msg, size_t len, inv_t* inv, struct io_descriptor
 	// Therefore, only do the rest of the code (pare into the struct) when st_c = 0;
 	int st_c = 1;
 	
+	printf("INC: %s",msg);
+	
 	// Check for garbage
 	switch(msg[0])
 	{
@@ -559,20 +561,27 @@ int main(void)
 {
 	/* Initializes MCU, drivers and middleware */
 	atmel_start_init();
+	printf("Hello World");
+	
 	can_init();
 	init_timer();
 	uart_init();
 	can_rx_queue_initialise();
+	
+	struct io_descriptor *io;
+	usart_async_get_io_descriptor(&TARGET_IO,&io);
 	
 	gpio_set_pin_level(ASS_RELAY_PIN, ASS_OPEN); // 0 is open 1 is closed
 	
 	/* Replace with your application code */
 	while (1) 
 	{
+		delay_ms(100);
+		io_write(io, (uint8_t*)"Hello world",12);
 		
 		// if ready do something!!
-		handle_uart();
-		handle_inverter(&inv2, &UART_MC_2.io); // change to 2 if needed
+		//handle_uart();
+		//handle_inverter(&inv2, &UART_MC_2.io); // change to 2 if needed
 		
 		// handle inverters --> will use the inverter instances and transmit the appropriate throttle
 		// handle dash --> send from the inv struct the avg motor temp 
@@ -589,11 +598,6 @@ int main(void)
 		// Write a throttle input
 		
 		//Get it to spam s to the inverter
-		io_write(&UART_MC_1.io,"s\r\n",4);
-		io_write(&UART_MC_2.io,"s\r\n",4);
-		
-		
-		delay_ms(100);
 		
 	}
 }

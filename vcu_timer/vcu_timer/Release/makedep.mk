@@ -34,6 +34,8 @@ hal\src\hal_timer.c
 
 hal\src\hal_usart_async.c
 
+hal\src\hal_usart_sync.c
+
 hal\utils\src\utils_assert.c
 
 hal\utils\src\utils_event.c
@@ -65,4 +67,12 @@ hpl\uart\hpl_uart.c
 hpl\xdmac\hpl_xdmac.c
 
 main.c
+
+stdio_redirect\gcc\read.c
+
+stdio_redirect\gcc\write.c
+
+stdio_redirect\stdio_io.c
+
+stdio_start.c
 
