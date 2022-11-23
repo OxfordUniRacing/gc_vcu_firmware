@@ -14,18 +14,28 @@
 #include <hpl_tc.h>
 
 /* The channel amount for ADC */
-#define ADC_0_CH_AMOUNT 0
+#define ADC_0_CH_AMOUNT 3
 
 /* The buffer size for ADC */
+#define ADC_0_CH0_BUF_SIZE 16
+#define ADC_0_CH8_BUF_SIZE 16
+#define ADC_0_CH10_BUF_SIZE 16
 
 /* The maximal channel number of enabled channels */
+#define ADC_0_CH_MAX 10
 
 /* The channel amount for ADC */
-#define ADC_1_CH_AMOUNT 0
+#define ADC_1_CH_AMOUNT 5
 
 /* The buffer size for ADC */
+#define ADC_1_CH0_BUF_SIZE 16
+#define ADC_1_CH1_BUF_SIZE 16
+#define ADC_1_CH3_BUF_SIZE 16
+#define ADC_1_CH5_BUF_SIZE 16
+#define ADC_1_CH6_BUF_SIZE 16
 
 /* The maximal channel number of enabled channels */
+#define ADC_1_CH_MAX 6
 
 /*! The buffer size for USART */
 #define UART_MC_1_BUFFER_SIZE 16
@@ -53,9 +63,19 @@ struct usart_async_descriptor UART_MC_1;
 struct usart_async_descriptor UART_MC_2;
 struct can_async_descriptor   CAN_0;
 
+static uint8_t ADC_0_ch0_buf[ADC_0_CH0_BUF_SIZE];
+static uint8_t ADC_0_ch8_buf[ADC_0_CH8_BUF_SIZE];
+static uint8_t ADC_0_ch10_buf[ADC_0_CH10_BUF_SIZE];
+
 #ifdef ADC_0_CH_MAX
 static uint8_t ADC_0_map[ADC_0_CH_MAX + 1];
 #endif
+
+static uint8_t ADC_1_ch0_buf[ADC_1_CH0_BUF_SIZE];
+static uint8_t ADC_1_ch1_buf[ADC_1_CH1_BUF_SIZE];
+static uint8_t ADC_1_ch3_buf[ADC_1_CH3_BUF_SIZE];
+static uint8_t ADC_1_ch5_buf[ADC_1_CH5_BUF_SIZE];
+static uint8_t ADC_1_ch6_buf[ADC_1_CH6_BUF_SIZE];
 
 #ifdef ADC_1_CH_MAX
 static uint8_t ADC_1_map[ADC_1_CH_MAX + 1];
@@ -77,6 +97,11 @@ static void ADC_0_init(void)
 #ifdef ADC_0_CH_MAX
 	adc_async_init(&ADC_0, AFEC0, ADC_0_map, ADC_0_CH_MAX, ADC_0_CH_AMOUNT, &ADC_0_ch[0], (void *)NULL);
 #endif
+	adc_async_register_channel_buffer(&ADC_0, CONF_ADC_0_CHANNEL_0, ADC_0_ch0_buf, ADC_0_CH0_BUF_SIZE);
+
+	adc_async_register_channel_buffer(&ADC_0, CONF_ADC_0_CHANNEL_8, ADC_0_ch8_buf, ADC_0_CH8_BUF_SIZE);
+
+	adc_async_register_channel_buffer(&ADC_0, CONF_ADC_0_CHANNEL_10, ADC_0_ch10_buf, ADC_0_CH10_BUF_SIZE);
 
 	gpio_set_pin_function(PD30, GPIO_PIN_FUNCTION_OFF);
 
@@ -96,6 +121,15 @@ static void ADC_1_init(void)
 #ifdef ADC_1_CH_MAX
 	adc_async_init(&ADC_1, AFEC1, ADC_1_map, ADC_1_CH_MAX, ADC_1_CH_AMOUNT, &ADC_1_ch[0], (void *)NULL);
 #endif
+	adc_async_register_channel_buffer(&ADC_1, CONF_ADC_1_CHANNEL_0, ADC_1_ch0_buf, ADC_1_CH0_BUF_SIZE);
+
+	adc_async_register_channel_buffer(&ADC_1, CONF_ADC_1_CHANNEL_1, ADC_1_ch1_buf, ADC_1_CH1_BUF_SIZE);
+
+	adc_async_register_channel_buffer(&ADC_1, CONF_ADC_1_CHANNEL_3, ADC_1_ch3_buf, ADC_1_CH3_BUF_SIZE);
+
+	adc_async_register_channel_buffer(&ADC_1, CONF_ADC_1_CHANNEL_5, ADC_1_ch5_buf, ADC_1_CH5_BUF_SIZE);
+
+	adc_async_register_channel_buffer(&ADC_1, CONF_ADC_1_CHANNEL_6, ADC_1_ch6_buf, ADC_1_CH6_BUF_SIZE);
 
 	gpio_set_pin_function(PB1, GPIO_PIN_FUNCTION_OFF);
 

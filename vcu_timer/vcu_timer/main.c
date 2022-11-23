@@ -464,7 +464,7 @@ static void init_timer(void)
 	static struct timer_task TIMER_0_task1;
 	TIMER_0_task1.interval = 1; // 1 ms interrupt
 	TIMER_0_task1.cb       = TIMER_0_task1_cb;
-	TIMER_0_task1.mode     = TIMER_TASK_REPEAT
+	TIMER_0_task1.mode     = TIMER_TASK_REPEAT;
 	
 	
 	
@@ -589,7 +589,7 @@ int main(void)
 		// Write a throttle input
 		
 		//Get it to spam s to the inverter
-		io_write(&UART_MC_1.io.,"s\r\n",4);
+		io_write(&UART_MC_1.io,"s\r\n",4);
 		io_write(&UART_MC_2.io,"s\r\n",4);
 		
 		

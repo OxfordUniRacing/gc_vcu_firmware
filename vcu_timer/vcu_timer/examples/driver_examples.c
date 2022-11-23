@@ -10,13 +10,50 @@
 #include "driver_init.h"
 #include "utils.h"
 
+static void convert_cb_ADC_0_CHANNEL_0(const struct adc_async_descriptor *const descr, const uint8_t channel)
+{
+}
+
+static void convert_cb_ADC_0_CHANNEL_8(const struct adc_async_descriptor *const descr, const uint8_t channel)
+{
+}
+
+static void convert_cb_ADC_0_CHANNEL_10(const struct adc_async_descriptor *const descr, const uint8_t channel)
+{
+}
+
 /**
  * Example of using ADC_0 to generate waveform.
  */
 void ADC_0_example(void)
 {
-
+	adc_async_register_callback(&ADC_0, CONF_ADC_0_CHANNEL_0, ADC_ASYNC_CONVERT_CB, convert_cb_ADC_0_CHANNEL_0);
+	adc_async_register_callback(&ADC_0, CONF_ADC_0_CHANNEL_8, ADC_ASYNC_CONVERT_CB, convert_cb_ADC_0_CHANNEL_8);
+	adc_async_register_callback(&ADC_0, CONF_ADC_0_CHANNEL_10, ADC_ASYNC_CONVERT_CB, convert_cb_ADC_0_CHANNEL_10);
+	adc_async_enable_channel(&ADC_0, CONF_ADC_0_CHANNEL_0);
+	adc_async_enable_channel(&ADC_0, CONF_ADC_0_CHANNEL_8);
+	adc_async_enable_channel(&ADC_0, CONF_ADC_0_CHANNEL_10);
 	adc_async_start_conversion(&ADC_0);
+}
+
+static void convert_cb_ADC_1_CHANNEL_0(const struct adc_async_descriptor *const descr, const uint8_t channel)
+{
+}
+
+static void convert_cb_ADC_1_CHANNEL_1(const struct adc_async_descriptor *const descr, const uint8_t channel)
+{
+}
+
+static void convert_cb_ADC_1_CHANNEL_3(const struct adc_async_descriptor *const descr, const uint8_t channel)
+{
+}
+
+static void convert_cb_ADC_1_CHANNEL_5(const struct adc_async_descriptor *const descr, const uint8_t channel)
+{
+}
+
+static void convert_cb_ADC_1_CHANNEL_6(const struct adc_async_descriptor *const descr, const uint8_t channel)
+{
 }
 
 /**
@@ -24,7 +61,16 @@ void ADC_0_example(void)
  */
 void ADC_1_example(void)
 {
-
+	adc_async_register_callback(&ADC_1, CONF_ADC_1_CHANNEL_0, ADC_ASYNC_CONVERT_CB, convert_cb_ADC_1_CHANNEL_0);
+	adc_async_register_callback(&ADC_1, CONF_ADC_1_CHANNEL_1, ADC_ASYNC_CONVERT_CB, convert_cb_ADC_1_CHANNEL_1);
+	adc_async_register_callback(&ADC_1, CONF_ADC_1_CHANNEL_3, ADC_ASYNC_CONVERT_CB, convert_cb_ADC_1_CHANNEL_3);
+	adc_async_register_callback(&ADC_1, CONF_ADC_1_CHANNEL_5, ADC_ASYNC_CONVERT_CB, convert_cb_ADC_1_CHANNEL_5);
+	adc_async_register_callback(&ADC_1, CONF_ADC_1_CHANNEL_6, ADC_ASYNC_CONVERT_CB, convert_cb_ADC_1_CHANNEL_6);
+	adc_async_enable_channel(&ADC_1, CONF_ADC_1_CHANNEL_0);
+	adc_async_enable_channel(&ADC_1, CONF_ADC_1_CHANNEL_1);
+	adc_async_enable_channel(&ADC_1, CONF_ADC_1_CHANNEL_3);
+	adc_async_enable_channel(&ADC_1, CONF_ADC_1_CHANNEL_5);
+	adc_async_enable_channel(&ADC_1, CONF_ADC_1_CHANNEL_6);
 	adc_async_start_conversion(&ADC_1);
 }
 

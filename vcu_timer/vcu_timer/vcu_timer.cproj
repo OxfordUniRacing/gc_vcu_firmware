@@ -121,11 +121,11 @@
           <AcmeProjectActionInfo Action="File" Source="hri/hri_wdt_e70b.h" IsConfig="false" Hash="Bk9YCYT1zhzBseOu3GUZ6g" />
           <AcmeProjectActionInfo Action="File" Source="hri/hri_xdmac_e70b.h" IsConfig="false" Hash="MfKnGgmh/NkP+3YwIqQ7Zw" />
           <AcmeProjectActionInfo Action="File" Source="main.c" IsConfig="false" Hash="k0AH7j+BrmdFhBPzCCMptA" />
-          <AcmeProjectActionInfo Action="File" Source="driver_init.c" IsConfig="false" Hash="7wlx+tBpTUkKHNueiQ7zEw" />
-          <AcmeProjectActionInfo Action="File" Source="driver_init.h" IsConfig="false" Hash="tFDArrSsTQF7uLhiiaMTEQ" />
+          <AcmeProjectActionInfo Action="File" Source="driver_init.c" IsConfig="false" Hash="pnumEEOkO7gmDKUm/ZQ/Rw" />
+          <AcmeProjectActionInfo Action="File" Source="driver_init.h" IsConfig="false" Hash="1SaIbEVcU49Tp+cxkDjvKA" />
           <AcmeProjectActionInfo Action="File" Source="atmel_start_pins.h" IsConfig="false" Hash="SDR//36hp9EAV8oXbxi1Jw" />
           <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.h" IsConfig="false" Hash="xNWbrOUsn2+nffRHnXt0pA" />
-          <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.c" IsConfig="false" Hash="gpWgUQ/MA2mVfDByIyoV3A" />
+          <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.c" IsConfig="false" Hash="vHTIQ+79V75qvb8/s+bycg" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_adc_async.h" IsConfig="false" Hash="kQUwcVcp1XAP9GQn0S34sw" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_timer.h" IsConfig="false" Hash="5pZVthtMl40VMvofOld2ng" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_usart_async.h" IsConfig="false" Hash="km9RyrLcCSavva/oZ2rcOQ" />
@@ -160,7 +160,7 @@
           <AcmeProjectActionInfo Action="File" Source="hpl/xdmac/hpl_xdmac.c" IsConfig="false" Hash="OuSCR23Cl7sDOyG/ZWMUrg" />
           <AcmeProjectActionInfo Action="File" Source="atmel_start.h" IsConfig="false" Hash="9RBG5E2ViQiSP2Gn4/FGpA" />
           <AcmeProjectActionInfo Action="File" Source="atmel_start.c" IsConfig="false" Hash="1RHIE7zTtYK4DURNPUqF9w" />
-          <AcmeProjectActionInfo Action="File" Source="config/hpl_afec_config.h" IsConfig="true" Hash="+9crFtitzt/5wpnrwHmi0A" />
+          <AcmeProjectActionInfo Action="File" Source="config/hpl_afec_config.h" IsConfig="true" Hash="Jp3PjhS2Lz8mqkjdwkw3HA" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_efc_config.h" IsConfig="true" Hash="rTnCiPFXIQNfCKC+1h0V0g" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_mcan_config.h" IsConfig="true" Hash="ncFZsC4oRILI45mJ33C/dw" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_pmc_config.h" IsConfig="true" Hash="fsJygcvlSu6O7p6bXz7oeg" />
@@ -180,7 +180,7 @@
         <documentation help="" />
         <offline-documentation help="" />
         <dependencies>
-          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.44.1" />
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.42.0" />
         </dependencies>
       </framework-data>
     </AsfFrameworkConfig>

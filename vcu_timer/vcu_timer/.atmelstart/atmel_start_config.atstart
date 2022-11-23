@@ -27,8 +27,8 @@ drivers:
     api: HAL:Driver:ADC_Async
     configuration:
       afec_advanced_settings: false
-      afec_channel0_enable: false
-      afec_channel10_enable: false
+      afec_channel0_enable: true
+      afec_channel10_enable: true
       afec_channel11_enable: false
       afec_channel1_enable: false
       afec_channel2_enable: false
@@ -37,7 +37,7 @@ drivers:
       afec_channel5_enable: false
       afec_channel6_enable: false
       afec_channel7_enable: false
-      afec_channel8_enable: false
+      afec_channel8_enable: true
       afec_channel9_enable: false
       afec_channel_diff0: false
       afec_channel_diff1: false
@@ -174,15 +174,15 @@ drivers:
     api: HAL:Driver:ADC_Async
     configuration:
       afec_advanced_settings: false
-      afec_channel0_enable: false
+      afec_channel0_enable: true
       afec_channel10_enable: false
       afec_channel11_enable: false
-      afec_channel1_enable: false
+      afec_channel1_enable: true
       afec_channel2_enable: false
-      afec_channel3_enable: false
+      afec_channel3_enable: true
       afec_channel4_enable: false
-      afec_channel5_enable: false
-      afec_channel6_enable: false
+      afec_channel5_enable: true
+      afec_channel6_enable: true
       afec_channel7_enable: false
       afec_channel8_enable: false
       afec_channel9_enable: false

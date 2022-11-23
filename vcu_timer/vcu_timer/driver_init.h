@@ -37,10 +37,22 @@ extern "C" {
 extern struct adc_async_descriptor ADC_0;
 
 /* The enabled channel for ADC */
+#define CONF_ADC_0_CHANNEL_0 0
+
+#define CONF_ADC_0_CHANNEL_8 8
+
+#define CONF_ADC_0_CHANNEL_10 10
 
 extern struct adc_async_descriptor ADC_1;
 
 /* The enabled channel for ADC */
+#define CONF_ADC_1_CHANNEL_0 0
+#define CONF_ADC_1_CHANNEL_1 1
+
+#define CONF_ADC_1_CHANNEL_3 3
+
+#define CONF_ADC_1_CHANNEL_5 5
+#define CONF_ADC_1_CHANNEL_6 6
 
 extern struct flash_descriptor       FLASH_0;
 extern struct timer_descriptor       TIMER_0;

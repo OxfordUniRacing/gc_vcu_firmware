@@ -339,7 +339,7 @@
 // <e> Channel 0 Enable
 // <id> afec_channel0_enable
 #ifndef CONF_AFEC_0_CHANNEL0_ENABLE
-#define CONF_AFEC_0_CHANNEL0_ENABLE 0
+#define CONF_AFEC_0_CHANNEL0_ENABLE 1
 #endif
 
 // <o> Gain
@@ -699,7 +699,7 @@
 // <e> Channel 8 Enable
 // <id> afec_channel8_enable
 #ifndef CONF_AFEC_0_CHANNEL8_ENABLE
-#define CONF_AFEC_0_CHANNEL8_ENABLE 0
+#define CONF_AFEC_0_CHANNEL8_ENABLE 1
 #endif
 
 // <o> Gain
@@ -789,7 +789,7 @@
 // <e> Channel 10 Enable
 // <id> afec_channel10_enable
 #ifndef CONF_AFEC_0_CHANNEL10_ENABLE
-#define CONF_AFEC_0_CHANNEL10_ENABLE 0
+#define CONF_AFEC_0_CHANNEL10_ENABLE 1
 #endif
 
 // <o> Gain
@@ -1372,7 +1372,7 @@
 // <e> Channel 0 Enable
 // <id> afec_channel0_enable
 #ifndef CONF_AFEC_1_CHANNEL0_ENABLE
-#define CONF_AFEC_1_CHANNEL0_ENABLE 0
+#define CONF_AFEC_1_CHANNEL0_ENABLE 1
 #endif
 
 // <o> Gain
@@ -1417,7 +1417,7 @@
 // <e> Channel 1 Enable
 // <id> afec_channel1_enable
 #ifndef CONF_AFEC_1_CHANNEL1_ENABLE
-#define CONF_AFEC_1_CHANNEL1_ENABLE 0
+#define CONF_AFEC_1_CHANNEL1_ENABLE 1
 #endif
 
 // <o> Gain
@@ -1507,7 +1507,7 @@
 // <e> Channel 3 Enable
 // <id> afec_channel3_enable
 #ifndef CONF_AFEC_1_CHANNEL3_ENABLE
-#define CONF_AFEC_1_CHANNEL3_ENABLE 0
+#define CONF_AFEC_1_CHANNEL3_ENABLE 1
 #endif
 
 // <o> Gain
@@ -1597,7 +1597,7 @@
 // <e> Channel 5 Enable
 // <id> afec_channel5_enable
 #ifndef CONF_AFEC_1_CHANNEL5_ENABLE
-#define CONF_AFEC_1_CHANNEL5_ENABLE 0
+#define CONF_AFEC_1_CHANNEL5_ENABLE 1
 #endif
 
 // <o> Gain
@@ -1642,7 +1642,7 @@
 // <e> Channel 6 Enable
 // <id> afec_channel6_enable
 #ifndef CONF_AFEC_1_CHANNEL6_ENABLE
-#define CONF_AFEC_1_CHANNEL6_ENABLE 0
+#define CONF_AFEC_1_CHANNEL6_ENABLE 1
 #endif
 
 // <o> Gain
