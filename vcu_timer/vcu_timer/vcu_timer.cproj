@@ -120,15 +120,23 @@
           <AcmeProjectActionInfo Action="File" Source="hri/hri_utmi_e70b.h" IsConfig="false" Hash="xRuie+0W28/YDyj1VFxyWg" />
           <AcmeProjectActionInfo Action="File" Source="hri/hri_wdt_e70b.h" IsConfig="false" Hash="Bk9YCYT1zhzBseOu3GUZ6g" />
           <AcmeProjectActionInfo Action="File" Source="hri/hri_xdmac_e70b.h" IsConfig="false" Hash="MfKnGgmh/NkP+3YwIqQ7Zw" />
+          <AcmeProjectActionInfo Action="File" Source="stdio_redirect/gcc/read.c" IsConfig="false" Hash="965gzdOr4sfKJQ4OpEJN/g" />
+          <AcmeProjectActionInfo Action="File" Source="stdio_redirect/gcc/write.c" IsConfig="false" Hash="gCAVrSOZuCMZ84vNa/WFxA" />
+          <AcmeProjectActionInfo Action="File" Source="stdio_redirect/iar/read.c" IsConfig="false" Hash="IpkgLxXTg/nDat19kCJ3gw" />
+          <AcmeProjectActionInfo Action="File" Source="stdio_redirect/iar/write.c" IsConfig="false" Hash="JTD9ZyU1GAbpub8mamr/ZA" />
+          <AcmeProjectActionInfo Action="File" Source="stdio_redirect/keil/Retarget.c" IsConfig="false" Hash="NzdDPGuEvGimitFm3wVXxw" />
+          <AcmeProjectActionInfo Action="File" Source="stdio_redirect/stdio_io.c" IsConfig="false" Hash="Nx8PfIAymK/f5AjLql/CyQ" />
+          <AcmeProjectActionInfo Action="File" Source="stdio_redirect/stdio_io.h" IsConfig="false" Hash="4X02f8UL8cjBHeGJM3BnHw" />
           <AcmeProjectActionInfo Action="File" Source="main.c" IsConfig="false" Hash="k0AH7j+BrmdFhBPzCCMptA" />
-          <AcmeProjectActionInfo Action="File" Source="driver_init.c" IsConfig="false" Hash="pnumEEOkO7gmDKUm/ZQ/Rw" />
-          <AcmeProjectActionInfo Action="File" Source="driver_init.h" IsConfig="false" Hash="1SaIbEVcU49Tp+cxkDjvKA" />
+          <AcmeProjectActionInfo Action="File" Source="driver_init.c" IsConfig="false" Hash="a6kd3+UifC3u7sWsHT8HjQ" />
+          <AcmeProjectActionInfo Action="File" Source="driver_init.h" IsConfig="false" Hash="G3F+EkKYZr4unDK7JPjpvQ" />
           <AcmeProjectActionInfo Action="File" Source="atmel_start_pins.h" IsConfig="false" Hash="SDR//36hp9EAV8oXbxi1Jw" />
-          <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.h" IsConfig="false" Hash="xNWbrOUsn2+nffRHnXt0pA" />
-          <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.c" IsConfig="false" Hash="vHTIQ+79V75qvb8/s+bycg" />
+          <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.h" IsConfig="false" Hash="v9kxfbq27trSQEm9xtm/ZA" />
+          <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.c" IsConfig="false" Hash="bfTI2XenpvDpXOEcCdGQpw" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_adc_async.h" IsConfig="false" Hash="kQUwcVcp1XAP9GQn0S34sw" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_timer.h" IsConfig="false" Hash="5pZVthtMl40VMvofOld2ng" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_usart_async.h" IsConfig="false" Hash="km9RyrLcCSavva/oZ2rcOQ" />
+          <AcmeProjectActionInfo Action="File" Source="hal/include/hal_usart_sync.h" IsConfig="false" Hash="ZzIGSRyjZuxRzFAtNNt7sw" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hpl_adc_async.h" IsConfig="false" Hash="kKbVmqgGDUkuWZYErBwgVA" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hpl_adc_sync.h" IsConfig="false" Hash="dCWrizZn0RtcCM73jZ/k6A" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hpl_missing_features.h" IsConfig="false" Hash="XsAvpgfutzkw0Y5SydYFaw" />
@@ -141,6 +149,7 @@
           <AcmeProjectActionInfo Action="File" Source="hal/src/hal_adc_async.c" IsConfig="false" Hash="v3JpZEnczYxSmx7a+K50SA" />
           <AcmeProjectActionInfo Action="File" Source="hal/src/hal_timer.c" IsConfig="false" Hash="F2MrEXhHq4umI9xpONnlGg" />
           <AcmeProjectActionInfo Action="File" Source="hal/src/hal_usart_async.c" IsConfig="false" Hash="1BPdzHEU8u472rtyf6cIdg" />
+          <AcmeProjectActionInfo Action="File" Source="hal/src/hal_usart_sync.c" IsConfig="false" Hash="VBVlAmBFEYTTUMHeIRFSxg" />
           <AcmeProjectActionInfo Action="File" Source="hal/utils/include/parts.h" IsConfig="false" Hash="xeDnYSZ12qQqrm18mLTaaw" />
           <AcmeProjectActionInfo Action="File" Source="hpl/afec/hpl_afec.c" IsConfig="false" Hash="9tkJ5VPcT2QME1v1OTeu4g" />
           <AcmeProjectActionInfo Action="File" Source="hpl/core/hpl_core_m7_base.c" IsConfig="false" Hash="KIovO5rGBDN2wJ+OLfhqhQ" />
@@ -155,19 +164,22 @@
           <AcmeProjectActionInfo Action="File" Source="hpl/pmc/hpl_sleep.c" IsConfig="false" Hash="9+YuE98G6WFJNZZ9ZxtdaQ" />
           <AcmeProjectActionInfo Action="File" Source="hpl/tc/hpl_tc.c" IsConfig="false" Hash="XRseFPc1wYn39pMQX+jCuQ" />
           <AcmeProjectActionInfo Action="File" Source="hpl/tc/hpl_tc.h" IsConfig="false" Hash="RYPztH2LPxE/VUnYArOlBA" />
-          <AcmeProjectActionInfo Action="File" Source="hpl/uart/hpl_uart.c" IsConfig="false" Hash="NR37j+olEvaKzGl1zhiBVg" />
+          <AcmeProjectActionInfo Action="File" Source="hpl/uart/hpl_uart.c" IsConfig="false" Hash="3ZnN7r0hoCS/JQOT3A53mA" />
           <AcmeProjectActionInfo Action="File" Source="hpl/uart/hpl_uart_base.h" IsConfig="false" Hash="4HEZG7XedIbksKXQjNiJSA" />
           <AcmeProjectActionInfo Action="File" Source="hpl/xdmac/hpl_xdmac.c" IsConfig="false" Hash="OuSCR23Cl7sDOyG/ZWMUrg" />
-          <AcmeProjectActionInfo Action="File" Source="atmel_start.h" IsConfig="false" Hash="9RBG5E2ViQiSP2Gn4/FGpA" />
-          <AcmeProjectActionInfo Action="File" Source="atmel_start.c" IsConfig="false" Hash="1RHIE7zTtYK4DURNPUqF9w" />
+          <AcmeProjectActionInfo Action="File" Source="stdio_start.c" IsConfig="false" Hash="WtwT7ld+0j4cPDj52v3y1A" />
+          <AcmeProjectActionInfo Action="File" Source="stdio_start.h" IsConfig="false" Hash="5j2k69zdoQpbzluEyr/rHQ" />
+          <AcmeProjectActionInfo Action="File" Source="atmel_start.h" IsConfig="false" Hash="TNU9VszFRFbDuMJ3vToUzg" />
+          <AcmeProjectActionInfo Action="File" Source="atmel_start.c" IsConfig="false" Hash="lom1/YOY9m/TDACgnyb3yA" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_afec_config.h" IsConfig="true" Hash="Jp3PjhS2Lz8mqkjdwkw3HA" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_efc_config.h" IsConfig="true" Hash="rTnCiPFXIQNfCKC+1h0V0g" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_mcan_config.h" IsConfig="true" Hash="ncFZsC4oRILI45mJ33C/dw" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_pmc_config.h" IsConfig="true" Hash="fsJygcvlSu6O7p6bXz7oeg" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_tc_config.h" IsConfig="true" Hash="lmr7ORpfZzKn4S6TscRAdA" />
-          <AcmeProjectActionInfo Action="File" Source="config/hpl_uart_config.h" IsConfig="true" Hash="6AZG/SI5P8KRi7QxcdRHqQ" />
+          <AcmeProjectActionInfo Action="File" Source="config/hpl_uart_config.h" IsConfig="true" Hash="roPL6pWWY31g1UIjHeAiUQ" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_xdmac_config.h" IsConfig="true" Hash="DDZ2H+b5anPm9+Iz2dR2AQ" />
-          <AcmeProjectActionInfo Action="File" Source="config/peripheral_clk_config.h" IsConfig="true" Hash="kB8YChMW7rI1qBBu1HHRrQ" />
+          <AcmeProjectActionInfo Action="File" Source="config/peripheral_clk_config.h" IsConfig="true" Hash="RaStAV199Lj+YAX2ujRI0w" />
+          <AcmeProjectActionInfo Action="File" Source="config/stdio_redirect_config.h" IsConfig="true" Hash="CKmkBk12sfr7mb+HRQBuzg" />
         </AcmeActionInfos>
         <NonsecureFilesInfo />
       </AcmeProjectConfig>
@@ -244,6 +256,7 @@
       <Value>../hpl/uart</Value>
       <Value>../hpl/xdmac</Value>
       <Value>../hri</Value>
+      <Value>../stdio_redirect</Value>
       <Value>%24(PackRepoDir)\atmel\SAME70_DFP\2.4.166\same70b\include</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
@@ -282,6 +295,7 @@
       <Value>../hpl/uart</Value>
       <Value>../hpl/xdmac</Value>
       <Value>../hri</Value>
+      <Value>../stdio_redirect</Value>
       <Value>%24(PackRepoDir)\atmel\SAME70_DFP\2.4.166\same70b\include</Value>
     </ListValues>
   </armgcc.assembler.general.IncludePaths>
@@ -303,6 +317,7 @@
       <Value>../hpl/uart</Value>
       <Value>../hpl/xdmac</Value>
       <Value>../hri</Value>
+      <Value>../stdio_redirect</Value>
       <Value>%24(PackRepoDir)\atmel\SAME70_DFP\2.4.166\same70b\include</Value>
     </ListValues>
   </armgcc.preprocessingassembler.general.IncludePaths>
@@ -340,6 +355,7 @@
       <Value>../hpl/uart</Value>
       <Value>../hpl/xdmac</Value>
       <Value>../hri</Value>
+      <Value>../stdio_redirect</Value>
       <Value>%24(PackRepoDir)\atmel\SAME70_DFP\2.4.166\same70b\include</Value>
     </ListValues>
   </armgcc.compiler.directories.IncludePaths>
@@ -379,6 +395,7 @@
       <Value>../hpl/uart</Value>
       <Value>../hpl/xdmac</Value>
       <Value>../hri</Value>
+      <Value>../stdio_redirect</Value>
       <Value>%24(PackRepoDir)\atmel\SAME70_DFP\2.4.166\same70b\include</Value>
     </ListValues>
   </armgcc.assembler.general.IncludePaths>
@@ -401,6 +418,7 @@
       <Value>../hpl/uart</Value>
       <Value>../hpl/xdmac</Value>
       <Value>../hri</Value>
+      <Value>../stdio_redirect</Value>
       <Value>%24(PackRepoDir)\atmel\SAME70_DFP\2.4.166\same70b\include</Value>
     </ListValues>
   </armgcc.preprocessingassembler.general.IncludePaths>
@@ -443,6 +461,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Config\RTE_Components.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Config\stdio_redirect_config.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Device_Startup\startup_same70q21b.c">
@@ -494,6 +515,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hal\include\hal_usart_async.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="hal\include\hal_usart_sync.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hal\include\hpl_adc_async.h">
@@ -590,6 +614,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hal\src\hal_usart_async.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="hal\src\hal_usart_sync.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hal\utils\include\compiler.h">
@@ -805,10 +832,29 @@
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="stdio_redirect\gcc\read.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="stdio_redirect\gcc\write.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="stdio_redirect\stdio_io.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="stdio_redirect\stdio_io.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="stdio_start.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="stdio_start.h">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Config\" />
     <Folder Include="Device_Startup\" />
+    <Folder Include="documentation\" />
     <Folder Include="examples\" />
     <Folder Include="hal\" />
     <Folder Include="hal\documentation\" />
@@ -829,6 +875,8 @@
     <Folder Include="hpl\usbhs\" />
     <Folder Include="hpl\xdmac\" />
     <Folder Include="hri\" />
+    <Folder Include="stdio_redirect\" />
+    <Folder Include="stdio_redirect\gcc\" />
     <Folder Include="usb\" />
     <Folder Include="usb\class\" />
     <Folder Include="usb\class\cdc\" />
@@ -844,6 +892,9 @@
     <None Include="Device_Startup\same70q21b_sram.ld">
       <SubType>compile</SubType>
     </None>
+    <None Include="documentation\stdio.rst">
+      <SubType>compile</SubType>
+    </None>
     <None Include="hal\documentation\adc_async.rst">
       <SubType>compile</SubType>
     </None>
@@ -857,6 +908,9 @@
       <SubType>compile</SubType>
     </None>
     <None Include="hal\documentation\usart_async.rst">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="hal\documentation\usart_sync.rst">
       <SubType>compile</SubType>
     </None>
   </ItemGroup>

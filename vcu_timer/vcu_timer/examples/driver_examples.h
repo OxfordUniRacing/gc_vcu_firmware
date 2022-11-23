@@ -24,6 +24,8 @@ void FLASH_0_example(void);
 
 void TIMER_0_example(void);
 
+void TARGET_IO_example(void);
+
 void UART_MC_1_example(void);
 
 void UART_MC_2_example(void);

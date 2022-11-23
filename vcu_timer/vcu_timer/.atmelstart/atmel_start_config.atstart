@@ -18,7 +18,15 @@ board:
   device: ATSAME70Q21B-AN
 details: null
 application: null
-middlewares: {}
+middlewares:
+  STDIO_REDIRECT_0:
+    user_label: STDIO_REDIRECT_0
+    configuration: {}
+    definition: Atmel:STDIO_redirect:0.0.1::STDIO_Redirect
+    functionality: STDIO_Redirect
+    api: STDIO:Redirect:IO
+    dependencies:
+      Target IO: TARGET_IO
 drivers:
   ADC_0:
     user_label: ADC_0
@@ -516,6 +524,29 @@ drivers:
           external_frequency: 0
         configuration:
           tc_clock_source: Master Clock (MCK)
+  TARGET_IO:
+    user_label: TARGET_IO
+    definition: Atmel:SAME70B_Drivers:0.0.1::ATSAME70Q21B-AN::UART0::driver_config_definition::UART::HAL:Driver:USART.Sync
+    functionality: USART
+    api: HAL:Driver:USART_Sync
+    configuration:
+      uart_advanced: false
+      uart_baud_rate: 38400
+      uart_channel_mode: Normal Mode
+      uart_parity: No parity
+      uart_receive_filter_enable: false
+      uart_usclks: Peripheral clock is selected
+    optional_signals: []
+    variant: null
+    clocks:
+      domain_group:
+        nodes:
+        - name: UART
+          input: Master Clock (MCK)
+          external: false
+          external_frequency: 0
+        configuration:
+          uart_clock_source: Master Clock (MCK)
   UART_MC_1:
     user_label: UART_MC_1
     definition: Atmel:SAME70B_Drivers:0.0.1::ATSAME70Q21B-AN::UART1::driver_config_definition::UART::HAL:Driver:USART.Async

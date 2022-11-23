@@ -27,6 +27,9 @@ extern "C" {
 #include <hal_flash.h>
 
 #include <hal_timer.h>
+
+#include <hal_usart_sync.h>
+#include <hpl_uart_base.h>
 #include <hal_usart_async.h>
 #include <hpl_uart_base.h>
 #include <hal_usart_async.h>
@@ -54,14 +57,21 @@ extern struct adc_async_descriptor ADC_1;
 #define CONF_ADC_1_CHANNEL_5 5
 #define CONF_ADC_1_CHANNEL_6 6
 
-extern struct flash_descriptor       FLASH_0;
-extern struct timer_descriptor       TIMER_0;
+extern struct flash_descriptor FLASH_0;
+extern struct timer_descriptor TIMER_0;
+
+extern struct usart_sync_descriptor  TARGET_IO;
 extern struct usart_async_descriptor UART_MC_1;
 extern struct usart_async_descriptor UART_MC_2;
 extern struct can_async_descriptor   CAN_0;
 
 void FLASH_0_init(void);
 void FLASH_0_CLOCK_init(void);
+
+void TARGET_IO_PORT_init(void);
+void TARGET_IO_CLOCK_init(void);
+void TARGET_IO_init(void);
+void TARGET_IO_example(void);
 
 void UART_MC_1_PORT_init(void);
 void UART_MC_1_CLOCK_init(void);

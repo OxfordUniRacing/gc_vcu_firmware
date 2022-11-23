@@ -86,6 +86,8 @@ static uint8_t UART_MC_2_buffer[UART_MC_2_BUFFER_SIZE];
 
 struct flash_descriptor FLASH_0;
 
+struct usart_sync_descriptor TARGET_IO;
+
 /**
  * \brief ADC initialization function
  *
@@ -165,6 +167,22 @@ static void TIMER_0_init(void)
 	_pmc_enable_periph_clock(ID_TC0_CHANNEL0);
 	TIMER_0_PORT_init();
 	timer_init(&TIMER_0, TC0, _tc_get_timer());
+}
+
+void TARGET_IO_PORT_init(void)
+{
+}
+
+void TARGET_IO_CLOCK_init(void)
+{
+	_pmc_enable_periph_clock(ID_UART0);
+}
+
+void TARGET_IO_init(void)
+{
+	TARGET_IO_CLOCK_init();
+	usart_sync_init(&TARGET_IO, UART0, _uart_get_usart_sync());
+	TARGET_IO_PORT_init();
 }
 
 /**
@@ -317,6 +335,8 @@ void system_init(void)
 	FLASH_0_init();
 
 	TIMER_0_init();
+
+	TARGET_IO_init();
 	UART_MC_1_init();
 	UART_MC_2_init();
 
