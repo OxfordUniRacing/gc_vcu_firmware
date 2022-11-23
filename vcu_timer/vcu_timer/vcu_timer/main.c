@@ -27,18 +27,32 @@ static uint32_t current_time_ms(void);
 //========================ADC========================== checking ts main 
 // PD30 is TS
 // PC31 brakelight 
-void adc_init(void)	// This function already exists in the adc code from the driver itself
+static void adc_init(void)	// This function already exists in the adc code from the driver itself
 {
 	//needs to setup adc0 and adc1
 }
 
-bool ts_active(void) // @@ ask george what was said with the ts active pin
+static bool ts_active(void) // @@ ask george what was said with the ts active pin
 {
+	//We have setup an async ADC routine - think we want it syncronous
 	//reads adc1 pin PD30
 	//need to check its above an amount
 	
 	//return false;
 	return true;
+}
+
+/*
+ADC is async, meaning we tell it to convert, and an interrupt will occur when its done
+Therefore we need a handler to take the data from the interrupt into usable information for other modules
+As well as trigger the next adc samples
+
+@@ Probably easier doing it non-async
+*/
+static void handle_adc(void)
+{
+	
+	
 }
 
 //====================================TIMEOUTS==========================
@@ -572,13 +586,14 @@ int main(void)
 		// read the message (assume over 30V)
 			// when you get a message there is an interrupt which is handled in handle uart
 		
-		
 		// Write a throttle input
 		
+		//Get it to spam s to the inverter
+		io_write(&UART_MC_1.io.,"s\r\n",4);
+		io_write(&UART_MC_2.io,"s\r\n",4);
 		
 		
-		
-		
+		delay_ms(100);
 		
 	}
 }
